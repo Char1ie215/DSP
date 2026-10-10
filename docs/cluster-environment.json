@@ -1,0 +1,63 @@
+{
+  "source_export_sha256": "54c537cf98c95142598fff571866e00493a7d017ce043b0e9d80e652e7a42879",
+  "conda_packages": 39,
+  "pip_packages": 142,
+  "excluded": [
+    "aiohappyeyeballs",
+    "aiohttp",
+    "aiosignal",
+    "argcomplete",
+    "async-timeout",
+    "boto",
+    "cachetools",
+    "cffi",
+    "crcmod",
+    "cryptography",
+    "editable-libero",
+    "editable-oat",
+    "einx",
+    "frozendict",
+    "frozenlist",
+    "gcs-oauth2-boto-plugin",
+    "google-apitools",
+    "google-auth",
+    "google-auth-httplib2",
+    "google-reauth",
+    "gsutil",
+    "hf-transfer",
+    "httplib2",
+    "monotonic",
+    "multidict",
+    "oauth2client",
+    "propcache",
+    "pyasn1",
+    "pyasn1-modules",
+    "pycparser",
+    "pyopenssl",
+    "pyu2f",
+    "retry-decorator",
+    "rsa",
+    "tokenizers",
+    "transformers",
+    "vector-quantize-pytorch",
+    "yarl"
+  ],
+  "installation_helpers": {
+    "egl-probe": "1.0.2",
+    "cmake": "4.1.3"
+  },
+  "libero_revision": "6090ff21837566fed47b7c9061c9899f4749d36b",
+  "cluster_runtime": {
+    "python": "3.10.20",
+    "torch": "2.10.0+cu128",
+    "mujoco": "2.3.7",
+    "diffusers": "0.38.0"
+  },
+  "dependency_resolution": {
+    "status": "passed",
+    "packages": 142,
+    "python": "3.10.20",
+    "platform": "linux",
+    "kind": "pip_install_dry_run_ignore_installed"
+  }
+}

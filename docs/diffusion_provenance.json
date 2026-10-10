@@ -1,0 +1,295 @@
+{
+  "upstream": "https://github.com/Chaoqi-LIU/oat",
+  "revision": "4bb0c01611c5b1ec8a6268cb376aca2cb519c881",
+  "source_note": "Hashes describe the previously validated, DSP-patched checkout. Namespace changed to dsp_diffusion; unused UNet policy and misc import removed.",
+  "files": [
+    {
+      "source": "oat/common/checkpoint_util.py",
+      "source_sha256": "6ab2535b5e1ec66b9b0b3e5dbec15a0202fa0f318de361488d64c47b612041e1",
+      "vendored": "src/dsp_diffusion/common/checkpoint_util.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "6ab2535b5e1ec66b9b0b3e5dbec15a0202fa0f318de361488d64c47b612041e1",
+      "vendored_sha256": "6ab2535b5e1ec66b9b0b3e5dbec15a0202fa0f318de361488d64c47b612041e1"
+    },
+    {
+      "source": "oat/common/hydra_util.py",
+      "source_sha256": "b00bfa9d6699e64ee566a5c61a28e559919f6545b700ab066ce92b2bb64e6fa7",
+      "vendored": "src/dsp_diffusion/common/hydra_util.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "b00bfa9d6699e64ee566a5c61a28e559919f6545b700ab066ce92b2bb64e6fa7",
+      "vendored_sha256": "b00bfa9d6699e64ee566a5c61a28e559919f6545b700ab066ce92b2bb64e6fa7"
+    },
+    {
+      "source": "oat/common/json_logger.py",
+      "source_sha256": "f719e1f7e3799bda48cc6767cfee9fb7f6b7fc40039c54e474eeed02fb201fc6",
+      "vendored": "src/dsp_diffusion/common/json_logger.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "f719e1f7e3799bda48cc6767cfee9fb7f6b7fc40039c54e474eeed02fb201fc6",
+      "vendored_sha256": "f719e1f7e3799bda48cc6767cfee9fb7f6b7fc40039c54e474eeed02fb201fc6"
+    },
+    {
+      "source": "oat/common/pytorch_util.py",
+      "source_sha256": "a7608e3bcd35cc58842c2d52f3f01475e5439fcba76fd1c402d9bc32fc1878bc",
+      "vendored": "src/dsp_diffusion/common/pytorch_util.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "a7608e3bcd35cc58842c2d52f3f01475e5439fcba76fd1c402d9bc32fc1878bc",
+      "vendored_sha256": "a7608e3bcd35cc58842c2d52f3f01475e5439fcba76fd1c402d9bc32fc1878bc"
+    },
+    {
+      "source": "oat/common/replay_buffer.py",
+      "source_sha256": "5343d1f4aa479b76f4571536f9fed07f632bc386618bdd1e8773f9a5698b5e96",
+      "vendored": "src/dsp_diffusion/common/replay_buffer.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "5343d1f4aa479b76f4571536f9fed07f632bc386618bdd1e8773f9a5698b5e96",
+      "vendored_sha256": "5343d1f4aa479b76f4571536f9fed07f632bc386618bdd1e8773f9a5698b5e96"
+    },
+    {
+      "source": "oat/common/seq_sampler.py",
+      "source_sha256": "0555bea66411c07e71e858887c6dee7f3dcc894f232c8781a1edabd4e16afe22",
+      "vendored": "src/dsp_diffusion/common/seq_sampler.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "0555bea66411c07e71e858887c6dee7f3dcc894f232c8781a1edabd4e16afe22",
+      "vendored_sha256": "73c2b03080089c87b2086995f4bb159c0eb3a0fc5c023570259f7de9551b6563"
+    },
+    {
+      "source": "oat/common/timestamp_accumulator.py",
+      "source_sha256": "16f32c9e626debca2c495e859152e6fee4166732c5cb8b8923f4399854fcb6e9",
+      "vendored": "src/dsp_diffusion/common/timestamp_accumulator.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "16f32c9e626debca2c495e859152e6fee4166732c5cb8b8923f4399854fcb6e9",
+      "vendored_sha256": "16f32c9e626debca2c495e859152e6fee4166732c5cb8b8923f4399854fcb6e9"
+    },
+    {
+      "source": "oat/common/video_recorder.py",
+      "source_sha256": "a557ae7a80aa14357b852f2515842ad08e948544eb993e226b7bf627a3159452",
+      "vendored": "src/dsp_diffusion/common/video_recorder.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "a557ae7a80aa14357b852f2515842ad08e948544eb993e226b7bf627a3159452",
+      "vendored_sha256": "37c289c9e423899ad611e42b69a7e4548e9626e4db0f93622602ce50f5b00c85"
+    },
+    {
+      "source": "oat/dataset/base_dataset.py",
+      "source_sha256": "dfcad4e99d7cb944b03d47f60fe4a6e50c24894c04dc1d65fb8234a6046e78b3",
+      "vendored": "src/dsp_diffusion/dataset/base_dataset.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "dfcad4e99d7cb944b03d47f60fe4a6e50c24894c04dc1d65fb8234a6046e78b3",
+      "vendored_sha256": "0723a7ade3ff967eff8c16e6a0d57d39a0207bc478ee362df19e3cb4b4e01767"
+    },
+    {
+      "source": "oat/dataset/window_zarr_dataset.py",
+      "source_sha256": "e2f9a503d11f3ca61446feb0a8daa8aaefb5de6f656de2896e6ebc868c3cef5c",
+      "vendored": "src/dsp_diffusion/dataset/window_zarr_dataset.py",
+      "origin": "dsp_authored_integration",
+      "upstream_sha256": null,
+      "vendored_sha256": "d4927a07c0c0199d2515b9cdefd5195981840c1405aba2938cf1b7284e00dafa"
+    },
+    {
+      "source": "oat/dataset/zarr_dataset.py",
+      "source_sha256": "8ba6e2402790a00d9818f3131513f73f574dd1f17174c2f1e8d98f66ae8dee80",
+      "vendored": "src/dsp_diffusion/dataset/zarr_dataset.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "114d7c6b3a229c534dfc02cbd4f27de8c0d1cf9b3f72701cdafc7488f204b7b9",
+      "vendored_sha256": "500148b499a90be9facbc260cb54e46124e541f61b67750455888c18c7b63877"
+    },
+    {
+      "source": "oat/env/libero/env.py",
+      "source_sha256": "f19e0e18dc764bd73311e29601206b601b2875f4d789a0fb81f15bf869086469",
+      "vendored": "src/dsp_diffusion/env/libero/env.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "600bbc1bdf4e8a3ef4ae04719f29e8529c9e76c720fb16510af62e433add03d2",
+      "vendored_sha256": "f19e0e18dc764bd73311e29601206b601b2875f4d789a0fb81f15bf869086469"
+    },
+    {
+      "source": "oat/env/libero/factory.py",
+      "source_sha256": "146256091544ef17f3d96e093ace5ac393f609a9ae11b4acb4a0834260119887",
+      "vendored": "src/dsp_diffusion/env/libero/factory.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "9f42658df6548d2bdd69cf56bb4bc911a7a84e9cca2fdd70eeb22fdea504f828",
+      "vendored_sha256": "146256091544ef17f3d96e093ace5ac393f609a9ae11b4acb4a0834260119887"
+    },
+    {
+      "source": "oat/env_runner/base_runner.py",
+      "source_sha256": "c51f91ad0fec19abe25bfe18fea00129e93beb8cb94ea667fd760f1459f8ed71",
+      "vendored": "src/dsp_diffusion/env_runner/base_runner.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "c51f91ad0fec19abe25bfe18fea00129e93beb8cb94ea667fd760f1459f8ed71",
+      "vendored_sha256": "547e3e5003a4d9b8e94869e8031da48809f739cd06f98a06ad58efebe98efa7d"
+    },
+    {
+      "source": "oat/env_runner/libero_runner.py",
+      "source_sha256": "6f8274c3d13e01910b8e0b5877858e146a9bf8dbdfec4297f56475d9c41289db",
+      "vendored": "src/dsp_diffusion/env_runner/libero_runner.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "48ff3008fd8be007fcd3b2f154f0e9850382d62a609fcfebd2cee44711cb2504",
+      "vendored_sha256": "3dd99c59277068b21e6986fc02d8367967d873c133c31e4dca163d91763abed8"
+    },
+    {
+      "source": "oat/gymnasium_util/async_vector_env.py",
+      "source_sha256": "fa29e531b5cf2f74a48635c1f469a4750738aa5598461b68f0137c608c434e9d",
+      "vendored": "src/dsp_diffusion/gymnasium_util/async_vector_env.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "fa29e531b5cf2f74a48635c1f469a4750738aa5598461b68f0137c608c434e9d",
+      "vendored_sha256": "fa29e531b5cf2f74a48635c1f469a4750738aa5598461b68f0137c608c434e9d"
+    },
+    {
+      "source": "oat/gymnasium_util/multistep_wrapper.py",
+      "source_sha256": "365c42fd990ff2a5205dcfd800563d76c3a17164cb64539c51f50618fb1c6366",
+      "vendored": "src/dsp_diffusion/gymnasium_util/multistep_wrapper.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "365c42fd990ff2a5205dcfd800563d76c3a17164cb64539c51f50618fb1c6366",
+      "vendored_sha256": "365c42fd990ff2a5205dcfd800563d76c3a17164cb64539c51f50618fb1c6366"
+    },
+    {
+      "source": "oat/gymnasium_util/video_recording_wrapper.py",
+      "source_sha256": "c9acb72ca560dda8ce50d568a40d42b093b8c55e119da0555ed71669e2cf13e8",
+      "vendored": "src/dsp_diffusion/gymnasium_util/video_recording_wrapper.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "c9acb72ca560dda8ce50d568a40d42b093b8c55e119da0555ed71669e2cf13e8",
+      "vendored_sha256": "120f0a962c13f0c0a40173e234a44ed4ecdffd950292b89cf61015c7304e6381"
+    },
+    {
+      "source": "oat/model/common/dict_of_tensor_mixin.py",
+      "source_sha256": "158b63a244bcfb9aa377206730f5f59778c6aeb9138ff55c76d2c28ec46952d1",
+      "vendored": "src/dsp_diffusion/model/common/dict_of_tensor_mixin.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "158b63a244bcfb9aa377206730f5f59778c6aeb9138ff55c76d2c28ec46952d1",
+      "vendored_sha256": "158b63a244bcfb9aa377206730f5f59778c6aeb9138ff55c76d2c28ec46952d1"
+    },
+    {
+      "source": "oat/model/common/lr_scheduler.py",
+      "source_sha256": "7c3720934a7fbe1dedb8ade18ebc43b01232b0908f75304eda0301e97a15059b",
+      "vendored": "src/dsp_diffusion/model/common/lr_scheduler.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "feb9453856bfd1ee10b1faba6c64814e071c5e70174398daf3bfcd8d430c80db",
+      "vendored_sha256": "7c3720934a7fbe1dedb8ade18ebc43b01232b0908f75304eda0301e97a15059b"
+    },
+    {
+      "source": "oat/model/common/module_attr_mixin.py",
+      "source_sha256": "d1a5fe50036b7d8b4bdb11e79bb93cb3c69689f7397f35a7d5d029921e5f2317",
+      "vendored": "src/dsp_diffusion/model/common/module_attr_mixin.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "d1a5fe50036b7d8b4bdb11e79bb93cb3c69689f7397f35a7d5d029921e5f2317",
+      "vendored_sha256": "d1a5fe50036b7d8b4bdb11e79bb93cb3c69689f7397f35a7d5d029921e5f2317"
+    },
+    {
+      "source": "oat/model/common/normalizer.py",
+      "source_sha256": "7987bcdd3d088c4ef9120d29e6ec7b7419361702de02ce76e215d5869ddeab54",
+      "vendored": "src/dsp_diffusion/model/common/normalizer.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "7987bcdd3d088c4ef9120d29e6ec7b7419361702de02ce76e215d5869ddeab54",
+      "vendored_sha256": "8b97d9e4d79633fa56baac4004056e07d0c0d216b5b2636c1307f1393db15ce0"
+    },
+    {
+      "source": "oat/model/common/positional_embedding.py",
+      "source_sha256": "3c4fe01809286331ae71c526efb0ee6e5a69657b7d0c0231dbb29761008bf13d",
+      "vendored": "src/dsp_diffusion/model/common/positional_embedding.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "3c4fe01809286331ae71c526efb0ee6e5a69657b7d0c0231dbb29761008bf13d",
+      "vendored_sha256": "3c4fe01809286331ae71c526efb0ee6e5a69657b7d0c0231dbb29761008bf13d"
+    },
+    {
+      "source": "oat/model/common/tensor_util.py",
+      "source_sha256": "751b042aa5390ddf1f5b6220a465dfa20dbb9304e3c057f04512d6ee55f4e1b1",
+      "vendored": "src/dsp_diffusion/model/common/tensor_util.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "751b042aa5390ddf1f5b6220a465dfa20dbb9304e3c057f04512d6ee55f4e1b1",
+      "vendored_sha256": "751b042aa5390ddf1f5b6220a465dfa20dbb9304e3c057f04512d6ee55f4e1b1"
+    },
+    {
+      "source": "oat/model/diffusion/ema_model.py",
+      "source_sha256": "e2f4202b5d6c459a7ee1cfff270ac7da622ab457ca4cc6e6caa5c46c4acd6a31",
+      "vendored": "src/dsp_diffusion/model/diffusion/ema_model.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "e2f4202b5d6c459a7ee1cfff270ac7da622ab457ca4cc6e6caa5c46c4acd6a31",
+      "vendored_sha256": "e2f4202b5d6c459a7ee1cfff270ac7da622ab457ca4cc6e6caa5c46c4acd6a31"
+    },
+    {
+      "source": "oat/model/diffusion/transformer_for_diffusion.py",
+      "source_sha256": "ee6264b1f44d8b54a1fec6279f25df412e45f7dcca3838e6f686f8daa16a2f3f",
+      "vendored": "src/dsp_diffusion/model/diffusion/transformer_for_diffusion.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "ee6264b1f44d8b54a1fec6279f25df412e45f7dcca3838e6f686f8daa16a2f3f",
+      "vendored_sha256": "30aac023f6be034ce09b61983d03816e7c57c69c9eecde12d2a1b94cfc0cf050"
+    },
+    {
+      "source": "oat/perception/base_obs_encoder.py",
+      "source_sha256": "7e917e716943eaa84fe1a148d957b8896bcc503180a9cf1324593f795bb450b5",
+      "vendored": "src/dsp_diffusion/perception/base_obs_encoder.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "7e917e716943eaa84fe1a148d957b8896bcc503180a9cf1324593f795bb450b5",
+      "vendored_sha256": "a28e4b24611076def2b6950472ad1bed9f28055e7d16a854a63b7841804feeef"
+    },
+    {
+      "source": "oat/perception/crop_randomizer.py",
+      "source_sha256": "9cdde5cf02b7b8ad4687212aba24af00cf388d1c1a7a2929e1418a3e6bea22d6",
+      "vendored": "src/dsp_diffusion/perception/crop_randomizer.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "9cdde5cf02b7b8ad4687212aba24af00cf388d1c1a7a2929e1418a3e6bea22d6",
+      "vendored_sha256": "e56334330f28fd3e9540891dc37fc3a2a1729f7a25de0e96cdf1358e2e10492b"
+    },
+    {
+      "source": "oat/perception/fused_obs_encoder.py",
+      "source_sha256": "5cbb9826f4eebfb09f57ebe08ea799b56e68d7d466483f9adc7aa7c71810717f",
+      "vendored": "src/dsp_diffusion/perception/fused_obs_encoder.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "5cbb9826f4eebfb09f57ebe08ea799b56e68d7d466483f9adc7aa7c71810717f",
+      "vendored_sha256": "a1144412eef18b9d282b8a94c59ffedd8223ca57b39539d9abc40c1ebc0146a1"
+    },
+    {
+      "source": "oat/perception/robomimic_vision_encoder.py",
+      "source_sha256": "7be1283ad7e7db966de2d28a31f25cc926fcd3debc2cfda51b2436f3ec5f6ba5",
+      "vendored": "src/dsp_diffusion/perception/robomimic_vision_encoder.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "df8be743faa809682c353f6a3df58adb4e69ec7a86607cf4714fc169c82af22d",
+      "vendored_sha256": "f0b705e81f15618e1501da9602949c73c2cc6d795e2fe570b5e9c6a82785cfda"
+    },
+    {
+      "source": "oat/perception/state_encoder.py",
+      "source_sha256": "1c4b4c2c2cef44dfbcaab43129da94b14e7c4f62da33057895e890f21b20f41f",
+      "vendored": "src/dsp_diffusion/perception/state_encoder.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "1c4b4c2c2cef44dfbcaab43129da94b14e7c4f62da33057895e890f21b20f41f",
+      "vendored_sha256": "99fbe971b97f33ca57ae14adc1738f5b2183f808a13317a9c8d91d671abe7edb"
+    },
+    {
+      "source": "oat/policy/base_policy.py",
+      "source_sha256": "65edf57408ade83c8a64d7ec3e1f7bcd158abf361038f9997d7f6a7d0bcfa027",
+      "vendored": "src/dsp_diffusion/policy/base_policy.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "65edf57408ade83c8a64d7ec3e1f7bcd158abf361038f9997d7f6a7d0bcfa027",
+      "vendored_sha256": "b51aaef6d57f5956b2daa7a5e6b2f47e082e0bf3507b6de91016e00a2b93d010"
+    },
+    {
+      "source": "oat/policy/diffpolicy.py",
+      "source_sha256": "fbc3a6a12750506480f3265c5091c0308d75494c065666b4c3de0443ee2e3389",
+      "vendored": "src/dsp_diffusion/policy/diffpolicy.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "fbc3a6a12750506480f3265c5091c0308d75494c065666b4c3de0443ee2e3389",
+      "vendored_sha256": "38127c3a223a0e119a68981fb9989a09319ad7479afce1cccc03fcad38929657"
+    },
+    {
+      "source": "oat/policy/gaussian_action_adapter.py",
+      "source_sha256": "0233e721ae7fbf9dfb8880f502fe5ac22adf4dea56260b23f10efe7a05555bf5",
+      "vendored": "src/dsp_diffusion/policy/gaussian_action_adapter.py",
+      "origin": "dsp_authored_integration",
+      "upstream_sha256": null,
+      "vendored_sha256": "0233e721ae7fbf9dfb8880f502fe5ac22adf4dea56260b23f10efe7a05555bf5"
+    },
+    {
+      "source": "oat/workspace/base_workspace.py",
+      "source_sha256": "786d23cf943d1c6b14c904c6353f70e3fcae06c4a4d4dc5787b604d02bbbe8a5",
+      "vendored": "src/dsp_diffusion/workspace/base_workspace.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "163875025ea877bb037c5d364bfd6bc31a9e001aae5bca589f2798328726b919",
+      "vendored_sha256": "786d23cf943d1c6b14c904c6353f70e3fcae06c4a4d4dc5787b604d02bbbe8a5"
+    },
+    {
+      "source": "oat/workspace/train_policy.py",
+      "source_sha256": "57dba7f47102f56637e8eff5a52e4c95c20fd49f86b7de5f51511f9653ce4292",
+      "vendored": "src/dsp_diffusion/workspace/train_policy.py",
+      "origin": "upstream_oat_with_dsp_integration_changes",
+      "upstream_sha256": "75beb18e27b8cfc4e62e981a2b1e872486cc3ce3055a74416e6017440eb78b4f",
+      "vendored_sha256": "b3e33603a61658351d984cc7ec15452ac90b08b8328c9cb8ff3aa66439378056"
+    }
+  ]
+}

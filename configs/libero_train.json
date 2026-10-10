@@ -1,0 +1,52 @@
+{
+  "note": "Portable training presets, not a claim of exact final-checkpoint hyperparameters.",
+  "common": {
+    "SEED": "42",
+    "NUM_DEMO": "500",
+    "NUM_EPOCHS": "1001",
+    "N_OBS_STEPS": "2",
+    "BATCH_SIZE": "256",
+    "NUM_WORKERS": "4",
+    "CHECKPOINT_EVERY": "200",
+    "VAL_EVERY": "10",
+    "ROLLOUT_EVERY": "200",
+    "CHECKPOINT_MONITOR_KEY": "mean_success_rate",
+    "LAZY_EVAL": "false",
+    "TRAINING_RESUME": "false",
+    "OAT_CURRENT_GRIPPER": "0"
+  },
+  "representations": {
+    "paired_raw": {
+      "ACTION_KEY": "paired_pose_action13_s1",
+      "ACTION_DIM": "13",
+      "HORIZON": "32",
+      "N_ACTION_STEPS": "16",
+      "DATASET_TARGET": "dsp_diffusion.dataset.zarr_dataset.ZarrDataset",
+      "ROLLOUT_ADAPTER": "paired_pose_action_direct"
+    },
+    "paired_bsp": {
+      "ACTION_KEY": "paired_bspline13_cp16_h32",
+      "ACTION_DIM": "13",
+      "HORIZON": "16",
+      "N_ACTION_STEPS": "16",
+      "DATASET_TARGET": "dsp_diffusion.dataset.window_zarr_dataset.WindowZarrDataset",
+      "ROLLOUT_ADAPTER": "paired_bspline_direct"
+    },
+    "raw_action": {
+      "ACTION_KEY": "action",
+      "ACTION_DIM": "7",
+      "HORIZON": "32",
+      "N_ACTION_STEPS": "16",
+      "DATASET_TARGET": "dsp_diffusion.dataset.zarr_dataset.ZarrDataset",
+      "ROLLOUT_ADAPTER": "none"
+    },
+    "action_bsp": {
+      "ACTION_KEY": "action_bspline7_cp16_h32",
+      "ACTION_DIM": "7",
+      "HORIZON": "16",
+      "N_ACTION_STEPS": "16",
+      "DATASET_TARGET": "dsp_diffusion.dataset.window_zarr_dataset.WindowZarrDataset",
+      "ROLLOUT_ADAPTER": "action_bspline_direct"
+    }
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "fingerprint": "f7f62d6f3e8e9dc48abbc69eb3c45a4425679d348ebecfb6d3a06f42cde8c6a0",
+  "complete": true,
+  "missing": [],
+  "results": {
+    "raw_dp_nominal": {
+      "n": 2500,
+      "successes": 738,
+      "rate": 0.2952,
+      "invalid": 0,
+      "median_release_cm": null,
+      "measured_displacements": 0,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 153
+        },
+        "1": {
+          "n": 500,
+          "successes": 152
+        },
+        "2": {
+          "n": 500,
+          "successes": 147
+        },
+        "3": {
+          "n": 500,
+          "successes": 145
+        },
+        "4": {
+          "n": 500,
+          "successes": 141
+        }
+      }
+    },
+    "raw_dp_perturbed": {
+      "n": 2500,
+      "successes": 232,
+      "rate": 0.0928,
+      "invalid": 0,
+      "median_release_cm": 20.63185641785405,
+      "measured_displacements": 2500,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 51
+        },
+        "1": {
+          "n": 500,
+          "successes": 39
+        },
+        "2": {
+          "n": 500,
+          "successes": 44
+        },
+        "3": {
+          "n": 500,
+          "successes": 54
+        },
+        "4": {
+          "n": 500,
+          "successes": 44
+        }
+      }
+    },
+    "action_bsp_nominal": {
+      "n": 2500,
+      "successes": 699,
+      "rate": 0.2796,
+      "invalid": 0,
+      "median_release_cm": null,
+      "measured_displacements": 0,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 141
+        },
+        "1": {
+          "n": 500,
+          "successes": 140
+        },
+        "2": {
+          "n": 500,
+          "successes": 139
+        },
+        "3": {
+          "n": 500,
+          "successes": 152
+        },
+        "4": {
+          "n": 500,
+          "successes": 127
+        }
+      }
+    },
+    "action_bsp_perturbed": {
+      "n": 2500,
+      "successes": 304,
+      "rate": 0.1216,
+      "invalid": 0,
+      "median_release_cm": 20.60845865822109,
+      "measured_displacements": 2500,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 68
+        },
+        "1": {
+          "n": 500,
+          "successes": 61
+        },
+        "2": {
+          "n": 500,
+          "successes": 56
+        },
+        "3": {
+          "n": 500,
+          "successes": 60
+        },
+        "4": {
+          "n": 500,
+          "successes": 59
+        }
+      }
+    },
+    "paired_raw_A_nominal": {
+      "n": 2500,
+      "successes": 1354,
+      "rate": 0.5416,
+      "invalid": 0,
+      "median_release_cm": null,
+      "measured_displacements": 0,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 264
+        },
+        "1": {
+          "n": 500,
+          "successes": 270
+        },
+        "2": {
+          "n": 500,
+          "successes": 277
+        },
+        "3": {
+          "n": 500,
+          "successes": 271
+        },
+        "4": {
+          "n": 500,
+          "successes": 272
+        }
+      }
+    },
+    "paired_raw_A_perturbed": {
+      "n": 2500,
+      "successes": 1241,
+      "rate": 0.4964,
+      "invalid": 19,
+      "median_release_cm": 20.219563351136244,
+      "measured_displacements": 2500,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 233
+        },
+        "1": {
+          "n": 500,
+          "successes": 246
+        },
+        "2": {
+          "n": 500,
+          "successes": 270
+        },
+        "3": {
+          "n": 500,
+          "successes": 238
+        },
+        "4": {
+          "n": 500,
+          "successes": 254
+        }
+      }
+    },
+    "paired_bsp_A_nominal": {
+      "n": 2500,
+      "successes": 1139,
+      "rate": 0.4556,
+      "invalid": 0,
+      "median_release_cm": null,
+      "measured_displacements": 0,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 224
+        },
+        "1": {
+          "n": 500,
+          "successes": 222
+        },
+        "2": {
+          "n": 500,
+          "successes": 218
+        },
+        "3": {
+          "n": 500,
+          "successes": 247
+        },
+        "4": {
+          "n": 500,
+          "successes": 228
+        }
+      }
+    },
+    "paired_bsp_A_perturbed": {
+      "n": 2500,
+      "successes": 1152,
+      "rate": 0.4608,
+      "invalid": 11,
+      "median_release_cm": 20.250714392389597,
+      "measured_displacements": 2500,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 247
+        },
+        "1": {
+          "n": 500,
+          "successes": 231
+        },
+        "2": {
+          "n": 500,
+          "successes": 231
+        },
+        "3": {
+          "n": 500,
+          "successes": 226
+        },
+        "4": {
+          "n": 500,
+          "successes": 217
+        }
+      }
+    },
+    "paired_bsp_K1_direct_nominal": {
+      "n": 2500,
+      "successes": 918,
+      "rate": 0.3672,
+      "invalid": 0,
+      "median_release_cm": null,
+      "measured_displacements": 0,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 178
+        },
+        "1": {
+          "n": 500,
+          "successes": 175
+        },
+        "2": {
+          "n": 500,
+          "successes": 187
+        },
+        "3": {
+          "n": 500,
+          "successes": 195
+        },
+        "4": {
+          "n": 500,
+          "successes": 183
+        }
+      }
+    },
+    "paired_bsp_K16_direct_nominal": {
+      "n": 2500,
+      "successes": 1139,
+      "rate": 0.4556,
+      "invalid": 0,
+      "median_release_cm": null,
+      "measured_displacements": 0,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 224
+        },
+        "1": {
+          "n": 500,
+          "successes": 222
+        },
+        "2": {
+          "n": 500,
+          "successes": 218
+        },
+        "3": {
+          "n": 500,
+          "successes": 247
+        },
+        "4": {
+          "n": 500,
+          "successes": 228
+        }
+      }
+    },
+    "paired_raw_K16_direct_perturbed": {
+      "n": 2500,
+      "successes": 296,
+      "rate": 0.1184,
+      "invalid": 0,
+      "median_release_cm": 20.793833546319348,
+      "measured_displacements": 2500,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 62
+        },
+        "1": {
+          "n": 500,
+          "successes": 64
+        },
+        "2": {
+          "n": 500,
+          "successes": 61
+        },
+        "3": {
+          "n": 500,
+          "successes": 55
+        },
+        "4": {
+          "n": 500,
+          "successes": 54
+        }
+      }
+    },
+    "paired_raw_A_immediate_replan_perturbed": {
+      "n": 2500,
+      "successes": 245,
+      "rate": 0.098,
+      "invalid": 0,
+      "median_release_cm": 20.80574003771172,
+      "measured_displacements": 2500,
+      "replicates": {
+        "0": {
+          "n": 500,
+          "successes": 41
+        },
+        "1": {
+          "n": 500,
+          "successes": 56
+        },
+        "2": {
+          "n": 500,
+          "successes": 57
+        },
+        "3": {
+          "n": 500,
+          "successes": 42
+        },
+        "4": {
+          "n": 500,
+          "successes": 49
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "paired_bsp_K1_direct_nominal vs paired_bsp_K16_direct_nominal": {
+      "n": 2500,
+      "both": 611,
+      "left_only": 307,
+      "right_only": 528,
+      "neither": 1054
+    },
+    "paired_raw_K16_direct_perturbed vs paired_raw_A_perturbed": {
+      "n": 2500,
+      "both": 208,
+      "left_only": 88,
+      "right_only": 1033,
+      "neither": 1171
+    },
+    "paired_raw_A_immediate_replan_perturbed vs paired_raw_A_perturbed": {
+      "n": 2500,
+      "both": 186,
+      "left_only": 59,
+      "right_only": 1055,
+      "neither": 1200
+    }
+  },
+  "metric": "all_attempts",
+  "smoke_excluded": true
+}

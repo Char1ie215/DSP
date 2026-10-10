@@ -1,0 +1,10 @@
+include README.md THIRD_PARTY_NOTICES.md OAT_LICENSE.txt VALIDATION.md requirements-sim.txt
+include environment-linux64.lock
+recursive-include configs *.json
+recursive-include docs *.md *.json
+recursive-include src/dsp_diffusion/config *.yaml
+recursive-include models *.json
+recursive-include scripts *.py *.sh
+recursive-include tests *.py
+recursive-include results *.json
+global-exclude __pycache__ *.py[cod]

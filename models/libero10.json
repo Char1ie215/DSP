@@ -1,0 +1,58 @@
+{
+  "suite": "LIBERO-10",
+  "status": "standalone_inference_training_smoke_and_eight_rollouts_verified_not_full_benchmark_reproduction",
+  "provenance_note": "Release copies change only the dataset path. original_sha256 links each copy to the final paper manifest; expected_sha256 identifies the sanitized file.",
+  "final_run_fingerprint": "f7f62d6f3e8e9dc48abbc69eb3c45a4425679d348ebecfb6d3a06f42cde8c6a0",
+  "final_manifest_sha256": "04207bd12ecade4e9dc523f4daef80a4100593d17a6172efad7e19d71fe757b0",
+  "models": [
+    {
+      "id": "paired_raw",
+      "display_name": "Ours (RAW)",
+      "file": "checkpoints/libero10/paired_raw.ckpt",
+      "expected_sha256": "98f9a4588c19ddd2c938829ed9d65ff46b154469c8bdd581c579934521955388",
+      "checkpoint_selection": "epoch 800; validation loss 0.042097",
+      "strategies": [
+        "recovery",
+        "direct",
+        "replan"
+      ],
+      "original_sha256": "348f1f2dca37257ccd4c0ca681dde6efe1424057d11d37b0272ffdeceb30d706"
+    },
+    {
+      "id": "paired_bsp",
+      "display_name": "Ours (BSP)",
+      "file": "checkpoints/libero10/paired_bsp.ckpt",
+      "expected_sha256": "8ab11a461e97d5176f778cfe72671328a2e31a1063ed26ba49122afb27e5f305",
+      "checkpoint_selection": "Frozen latest checkpoint from the archived paired BSP reference",
+      "strategies": [
+        "recovery",
+        "direct",
+        "replan"
+      ],
+      "original_sha256": "b8caa513c2cb486438552f607269f4f238e5c9127c5cd4e7d1480c241eff880f"
+    },
+    {
+      "id": "raw_action",
+      "display_name": "Raw Action",
+      "file": "checkpoints/libero10/raw_action.ckpt",
+      "expected_sha256": "757266632c0cf6958d1abc6192bd2e4a9cb6ece88021ec294fb692f7712e597a",
+      "checkpoint_selection": "ep-1000_sr-0.286_vl-0.066505.ckpt, from the archived baseline evaluation log",
+      "strategies": [
+        "direct"
+      ],
+      "original_sha256": "24d2fd4996b7ef0a81c92c7add3973bc7bbd1a24378bbcee826b42c22c4dcbd9"
+    },
+    {
+      "id": "action_bsp",
+      "display_name": "Action BSP",
+      "file": "checkpoints/libero10/action_bsp.ckpt",
+      "expected_sha256": "d3304c73a73971ae79204f01fffed43b84eaaa0947ab58ac7476213ba2fa79c3",
+      "checkpoint_selection": "ep-0700_sr-0.282_vl-0.067131.ckpt, from the archived baseline evaluation log",
+      "strategies": [
+        "direct"
+      ],
+      "original_sha256": "9a0d23d26b89e7da116e7c3f6566137bd8c04ba4ff5c24de1c206e9be0e1a008"
+    }
+  ],
+  "download_url": "https://drive.google.com/file/d/1wsS6QJ2tbp92CggpW69OgXAtoXvnRHtj/view?usp=sharing"
+}
