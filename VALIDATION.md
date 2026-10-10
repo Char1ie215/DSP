@@ -90,7 +90,9 @@ Full training on demonstration data, the complete multi-task/multi-seed benchmar
 other GPUs/platforms, other simulation suites, and real-robot deployment were not
 rerun. Training presets are not certified reproductions of the original runs.
 
-Project-wide license selection remains pending. Retained upstream terms and
-excluded components are documented in `THIRD_PARTY_NOTICES.md`. The checkpoint
-download link is recorded in the README and model catalog. This is a technically
-tested release candidate, not a claim of publication or licensing clearance.
+DSP's original code is released under the MIT License in `LICENSE`.
+Retained upstream terms and excluded components are documented in
+`THIRD_PARTY_NOTICES.md`. The checkpoint download link is recorded in the README
+and model catalog; the source-code license does not assign license terms to the
+separately distributed weights. Technical validation does not establish
+licensing clearance for third-party materials.

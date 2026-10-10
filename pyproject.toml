@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "dynamic-system-policy"
 version = "0.1.0.dev0"
 description = "Paired motion-command prediction and dynamical-system recovery"
+license = {file = "LICENSE"}
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24,<3", "scipy>=1.10", "torch>=2.1"]
 
@@ -13,7 +14,7 @@ dependencies = ["numpy>=1.24,<3", "scipy>=1.10", "torch>=2.1"]
 test = ["pytest>=7.4", "zarr>=2.16,<3", "dill>=0.3.7", "pillow>=9.5", "pyyaml>=6", "omegaconf>=2.3"]
 
 [tool.setuptools]
-license-files = ["OAT_LICENSE.txt", "THIRD_PARTY_NOTICES.md"]
+license-files = ["LICENSE", "OAT_LICENSE.txt", "THIRD_PARTY_NOTICES.md"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

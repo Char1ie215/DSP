@@ -154,5 +154,12 @@ of the original paper training runs.
 DSP controllers are in `src/ns_gaussian_ds_policy`; the extracted diffusion
 runtime is in `src/dsp_diffusion`. Supported entry points are `scripts/train.py`
 and `scripts/evaluate.py`.
-See [validation status](VALIDATION.md). Source licensing is awaiting author
-confirmation; no project-wide license is granted by third-party notices alone.
+See [validation status](VALIDATION.md).
+
+## License
+
+DSP's original code is released under the [MIT License](LICENSE).
+Third-party code retains its original licenses and copyright notices; see
+[third-party notices](THIRD_PARTY_NOTICES.md) and [OAT's license](OAT_LICENSE.txt).
+This source-code license does not assign license terms to the separately
+distributed model weights, datasets, or paper/media assets.

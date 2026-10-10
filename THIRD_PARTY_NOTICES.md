@@ -24,6 +24,8 @@ that the third-party implementation was authored by DSP's authors.
 LIBERO is installed independently at revision
 `6090ff21837566fed47b7c9061c9899f4749d36b`, not bundled with this source archive.
 
+DSP's original code is licensed under the MIT License in `LICENSE`.
+Third-party code retains its original licenses and copyright notices.
 The project does not relicense external code, datasets, assets, or dependencies.
-Authors have not yet selected a project-wide license. This candidate is prepared
-for technical validation, not legal clearance for unrestricted redistribution.
+The MIT source-code license does not assign license terms to separately
+distributed model weights or paper/media assets.
