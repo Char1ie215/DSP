@@ -69,12 +69,61 @@ are recorded together. Load only trusted checkpoints (PyTorch pickle format).
 
 ## Evaluate
 
+### Enable Recovery Under Perturbations
+
+Run from the repository root after installation and weight extraction:
+
 ```bash
-python scripts/evaluate.py --representation paired_raw --strategy recovery --checkpoint checkpoints/libero10/paired_raw.ckpt --output outputs/raw_perturbed --task LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket --episodes 1 --perturbed
+export MUJOCO_GL=egl
+python scripts/evaluate.py \
+  --representation paired_raw \
+  --checkpoint checkpoints/libero10/paired_raw.ckpt \
+  --strategy recovery --perturbed --candidates 16 \
+  --task LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket \
+  --episodes 10 --environment-seed 900000 --sampling-seed 0 \
+  --output outputs/raw_recovery_10
 ```
 
-Omit `--perturbed` for nominal evaluation; add `--dry-run` to inspect settings.
-Outputs must use a new directory. Run all four models in both conditions with:
+On WSL2, replace `python scripts/evaluate.py` with
+`python scripts/run_wsl_gpu.py -- scripts/evaluate.py` as described above.
+
+**These are two separate switches:** `--strategy recovery` enables DSP's
+intervention, recovery-field execution, and subsequent replanning;
+`--perturbed` injects the evaluation push. The field is not applied continuously
+during normal execution: native predicted commands execute until intervention.
+The paper preset uses the measured pose at the known injected disturbance onset
+as its recovery reference; see [reference semantics](docs/evaluation.md#known-onset-versus-autonomous-reference).
+
+### Common Options
+
+| Option | Meaning / supported values |
+| --- | --- |
+| `--strategy` | `recovery` (default): recover then replan; `replan`: replan immediately at the intervention trigger without field recovery; `direct`: execute predicted commands without recovery. |
+| `--perturbed` | Inject the paper's external-wrench protocol with a 20 cm target displacement. Omit for no injected perturbation. This does not enable recovery by itself. |
+| `--episodes N` | Number of complete task rollouts for the selected task, not prediction candidates. Default 50. Use 1 for a quick execution check. |
+| `--candidates K` | Candidate pairs sampled per policy query. The release wrapper accepts only 1 or 16 (default 16). Recovery/replan require 16; 1 is a direct-execution ablation. |
+| `--representation` | `paired_raw` or `paired_bsp` for DSP; match the checkpoint. Action-only baselines require `--strategy direct --candidates 1`. |
+| `--checkpoint` | Path to the corresponding downloaded `.ckpt`. |
+| `--task` | Exact LIBERO task name, not `libero_10`. Each invocation evaluates one task. |
+| `--environment-seed` / `--sampling-seed` | Environment seed-sequence start (default 900000) and policy-sampling seed (default 0). See the protocol for multi-task/replicate scheduling. |
+| `--device` | PyTorch device, default `cuda:0`. |
+| `--output` | New output directory; existing directories are rejected. |
+| `--dry-run` | Print resolved settings without loading a checkpoint or running rollouts. |
+
+For example, `--episodes 10 --candidates 16` runs **10 episodes**, sampling
+**16 candidate pairs at each policy query**, not 160 episodes.
+To use BSP, change both the representation and checkpoint to `paired_bsp`.
+To compare direct/replan/recovery, keep the checkpoint, task, seeds, episode
+count, candidates, and perturbation condition fixed; change only the strategy
+and output directory. `direct` still makes normal policy queries; `replan`
+adds an immediate query when intervention is triggered.
+
+See [ablation commands, output inspection, and code locations](docs/evaluation.md#running-ablations)
+for runnable comparisons and where to find the controller and field code.
+
+### Smoke Test
+
+Run all four models in both conditions with:
 
 ```bash
 python scripts/smoke_test.py --output outputs/smoke
